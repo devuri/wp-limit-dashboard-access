@@ -1,6 +1,5 @@
 <?php
 /**
- 
 	@package  Limit Dashboard Access  by devuri
 
 	Plugin Name: Limit Dashboard Access 
