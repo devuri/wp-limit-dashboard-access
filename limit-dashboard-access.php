@@ -6,7 +6,7 @@
 	Plugin Name: Limit Dashboard Access 
 	Plugin URI: http://wp.devuri.com
 	Description: Disable the WP Dashboard access for subscribers. Redirect to the home page.
-	Version: 1.0.0
+	Version: 1.2.0
 	Author: devuri
 	Author URI: http://www.devuri.com
 	Contributors:
