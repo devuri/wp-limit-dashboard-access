@@ -89,7 +89,7 @@
 ******************************/
 
 	//======= SetUp admin Menu Here	
-	add_action("admin_menu", "limit_dashboard_access_lide");
+	//add_action("admin_menu", "limit_dashboard_access_lide");
 		function limit_dashboard_access_lide() {
 			
 			
