@@ -5,7 +5,7 @@
 
 	Plugin Name: Limit Dashboard Access 
 	Plugin URI: http://wp.devuri.com
-	Description: Disable the WP Dashboard access for subscribers. Redirect to the home page.
+	Description: Disable the WP Dashboard access and remove admin bar for subscribers. Redirect to the home page.
 	Version: 1.2.0
 	Author: devuri
 	Author URI: http://www.devuri.com
@@ -123,7 +123,9 @@
 
 	
 	// === redirect all subscribers 
-	add_action('admin_init', 'lide_deny_dashboard');
+        add_action('admin_init', 'lide_deny_dashboard');
+
+	
 	
 		function lide_deny_dashboard() {
 				if (!current_user_can('delete_posts') && $_SERVER['DOING_AJAX'] != '/wp-admin/admin-ajax.php') {
@@ -131,4 +133,8 @@
 			}
 		}
 	
-  
+	// also remove the admin bar
+	if (!current_user_can('delete_posts')){
+  		// remove admin bar
+		add_filter('show_admin_bar', '__return_false');
+	}
