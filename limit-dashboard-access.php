@@ -5,7 +5,7 @@
 
 	Plugin Name: Limit Dashboard Access 
 	Plugin URI: http://wp.devuri.com
-	Description: Disable the WP Dashboard access and remove admin bar for subscribers. Redirect to the home page.
+	Description: Disable the WP Dashboard access and remove admin bar for subscribers, change howdy to logout and remove wp logo. Redirect to the home page.
 	Version: 1.2.0
 	Author: devuri
 	Author URI: http://www.devuri.com
@@ -133,8 +133,48 @@
 			}
 		}
 	
-	// also remove the admin bar
 	if (!current_user_can('delete_posts')){
   		// remove admin bar
-		add_filter('show_admin_bar', '__return_false');
+		//add_filter('show_admin_bar', '__return_false');
 	}
+
+
+		// Replace the WordPress Generator
+		function devuri_generator() { 
+		return '<meta name="Archangel" content="DevuriKing and TheArch Prince" />'; 
+		}
+		
+		add_filter( 'the_generator', 'devuri_generator' );
+
+
+/*...............................................
+Remove the Howdy menu from the Admin Bar and change to a log Out Link 
+----------------------------------------------------- */
+add_action( 'wp_before_admin_bar_render', 'custom_logout_link_lide' ); 
+	
+	function custom_logout_link_lide() {
+    		global $wp_admin_bar;
+    		$wp_admin_bar->add_menu( array(
+        		'id'    => 'wp-custom-logout',
+        		'title' => 'Log Out',
+       			'parent'=> 'top-secondary',
+        		'href'  => wp_logout_url()
+    		) );
+    	$wp_admin_bar->remove_menu('my-account');
+	$wp_admin_bar->remove_menu('wp-admin');
+}
+
+
+add_action( 'admin_bar_menu', 'remove_wplogo_lide', 999 );
+
+function remove_wplogo_lide( $wp_admin_bar ) {
+	$wp_admin_bar->remove_node( 'wp-logo' );
+}
+
+
+add_filter('admin_footer_text', 'copywright_web_lide');
+	function copywright_web_lide () {
+	$blogname = get_bloginfo( 'name');
+	$th_year = date("Y");
+	echo '&copy; '.$th_year.' <a href="'.home_url().'" target="_blank">'.$blogname.'</a> All Rights Reserved. ';
+}
