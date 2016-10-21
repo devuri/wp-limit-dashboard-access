@@ -94,7 +94,7 @@
 			
 			
 				$page_title = "Limit Dashboard Access  Page ";
-				$menu_title = "Limit Dashboard Access ";
+				$menu_title = "Dashboard Access ";
 				$capability = "manage_options";
 				$menu_slug = "limit-dashboard-access-pqpln";
 				$function = "limit_dashboard_access_qpage";
