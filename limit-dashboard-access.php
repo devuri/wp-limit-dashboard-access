@@ -5,6 +5,7 @@
 
 	Plugin Name: Limit Dashboard Access 
 	Plugin URI: http://wp.devuri.com
+	GitHub Theme URI: devuri/wp-limit-dashboard-access
 	Description: Disable the WP Dashboard access and remove admin bar for subscribers, change howdy to logout and remove wp logo. Redirect to the home page.
 	Version: 1.3.0
 	Author: devuri
