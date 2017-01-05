@@ -174,3 +174,17 @@ add_filter('admin_footer_text', 'copywright_web_lide');
 	$th_year = date("Y");
 	echo '&copy; '.$th_year.' <a href="'.home_url().'" target="_blank">'.$blogname.'</a> All Rights Reserved. ';
 }
+
+
+/*---------------------------------------------------------
+	Remove Version From The Admin Footer
+------------------------------------------------------------*/
+add_action( 'admin_menu', 'dvwlw_rm_footer_version' );
+
+function dvwlw_rm_footer_version() {
+
+		// only remove for low level users
+		if ( ! current_user_can('manage_options') ) { 
+        remove_filter( 'update_footer', 'core_update_footer' ); 
+    }
+}
