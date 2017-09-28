@@ -1,48 +1,48 @@
 <?php
 /**
- 
-	@package  Limit Dashboard Access  by devuri
-
-	Plugin Name: Limit Dashboard Access 
-	Plugin URI: http://wp.devuri.com
-	GitHub Theme URI: devuri/wp-limit-dashboard-access
-	Description: Disable the WP Dashboard access, change howdy to logout and remove wp logo. Redirect to the home page.
-	Version: 1.3.0
-	Author: devuri
-	Author URI: http://www.devuri.com
-	Contributors:
-	License: GPLv2 or later
-	License URI: http://www.gnu.org/licenses/gpl-2.0.txt
-	Text Domain: limit-dashboard-access
-	Domain Path: /languages
-	Usage: .
-	Tags: 
-
-	
-	Copyright 2016 devuri	(email : hello@devuri.com)
-	GPLv2 Full license details in license.txt	
-
-	Limit Dashboard Access  is built using the  http://qweelo.com/QuPlugin, (C) 2015- 2016 Qweelo.
-	Qu Plugin QuickStarter is distributed under the terms of the GNU GPL v2 or later.
-
-	This Plugin, like WordPress, is licensed under the GPL.
-	Use it to make something cool, have fun, and share.	
-
-	This program is free software; you can redistribute it and/or
-	modify it under the terms of the GNU General Public License
-	as published by the Free Software Foundation; either version 2
-	of the License, or (at your option) any later version.
-
-	This program is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU General Public License for more details.
-
-	You should have received a copy of the GNU General Public License
-	along with this program; if not, write to the Free Software
-	Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-
----------------------------------------------------------------------------------------------------*/
+ *
+ *	@package  Limit Dashboard Access  by devuri
+ *
+ *	Plugin Name: Limit Dashboard Access 
+ *	Plugin URI: http://wp.devuri.com
+ *	GitHub Theme URI: devuri/wp-limit-dashboard-access
+ *	Description: Disable the WP Dashboard access, change howdy to logout and remove wp logo. Redirect to the home page.
+ *	Version: 1.3.0
+ *	Author: devuri
+ *	Author URI: http://www.devuri.com
+ *	Contributors:
+ *	License: GPLv2 or later
+ *	License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ *	Text Domain: limit-dashboard-access
+ *	Domain Path: /languages
+ *	Usage: .
+ *	Tags: 
+ *
+ *	
+ *	Copyright 2016 devuri	(email : hello@devuri.com)
+ *	GPLv2 Full license details in license.txt	
+ *
+ *	Limit Dashboard Access  is built using the  http://qweelo.com/QuPlugin, (C) 2015- 2016 Qweelo.
+ *	Qu Plugin QuickStarter is distributed under the terms of the GNU GPL v2 or later.
+ *
+ *	This Plugin, like WordPress, is licensed under the GPL.
+ *	Use it to make something cool, have fun, and share.	
+ *
+ *	This program is free software; you can redistribute it and/or
+ *	modify it under the terms of the GNU General Public License
+ *	as published by the Free Software Foundation; either version 2
+ *	of the License, or (at your option) any later version.
+ *
+ *	This program is distributed in the hope that it will be useful,
+ *	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *	GNU General Public License for more details.
+ *
+ *	You should have received a copy of the GNU General Public License
+ *	along with this program; if not, write to the Free Software
+ *	Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *
+ *---------------------------------------------------------------------------------------------------*/
 
 
 	// * DIRECT ACCESS DENIED *
